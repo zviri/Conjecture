@@ -14,9 +14,11 @@ sbtVersion := "0.12.1"
 
 scalacOptions ++= Seq("-unchecked", "-deprecation")
 
+javacOptions  ++= Seq("-source", "1.6", "-target", "1.6")
+
 compileOrder := CompileOrder.JavaThenScala
 
-javaHome := Some(file("/usr/java/latest"))
+//javaHome := Some(file("/usr/java/latest"))
 
 publishArtifact in packageDoc := false
 
